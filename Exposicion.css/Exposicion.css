@@ -1,0 +1,29 @@
+:root {
+    --blanco: #FFFFFF;
+    --azulClaro: #3E578E;
+    --azul: #184E97;
+    --azulOscuro: #11294A;
+    --grisClaro: #ECF0F1;
+    --gris: #D6DBDF;
+    --grisOscuro: #464646;
+    --turquesa: #0DBEB0;
+    --negro: #121212;
+    --negroClaro: #282828;
+    --rojo: #BD2F15;
+}
+
+body{
+    background-color: var(--gris);
+}
+
+.topbar{
+    height: 70px;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    position: relative;
+    border-bottom: 10px solid var(--negro);
+}
+
+.topbar a{
+    color: var(--blanco);
+}
