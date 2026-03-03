@@ -12,18 +12,32 @@
     --rojo: #BD2F15;
 }
 
-body{
+body {
     background-color: var(--gris);
 }
 
-.topbar{
-    height: 70px;
+/* NAVBAR */
+.topbar {
     background-color: var(--rojo);
-    color: var(--blanco);
-    position: relative;
-    border-bottom: 10px solid var(--negro);
+    border-bottom: 6px solid var(--negro);
 }
 
-.topbar a{
+.topbar .navbar-brand {
     color: var(--blanco);
+    font-size: 1.3rem;
+}
+
+.topbar .nav-link {
+    color: var(--blanco);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.topbar .nav-link:hover {
+    color: var(--grisClaro);
+}
+
+.topbar .nav-link.active {
+    color: var(--negro);
+    font-weight: 700;
 }
