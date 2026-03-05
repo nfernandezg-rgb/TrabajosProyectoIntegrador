@@ -13,13 +13,14 @@
     --negroTransparente: #00000080;
     --rojoTransparente: #bd2f15b3;
     --rosa: #bd2f151a;
+    --rojoTenue: #bd2f1526;
 }
 
 body {
     background-color: var(--gris);
 }
 
-/* NAVBAR */
+/*Estilos Navbar*/
 .topbar {
     background-color: var(--rojo);
     border-bottom: 6px solid var(--negro);
@@ -45,6 +46,7 @@ body {
     font-weight: 700;
 }
 
+/*Estilos Carroucel*/
 
 .bienvenida img {
     height: 400px;
@@ -56,6 +58,8 @@ body {
     padding: 20px;
     border-radius: 8px;
 }
+
+/*Estilos tarjetas*/
 
 .card-option {
     background: var(--negroTransparente);
@@ -81,3 +85,34 @@ body {
     justify-content: center;
 }
 
+/*Estilos formulario*/
+
+.form-box {
+    background-color: var(--rojoTenue);
+    border-radius: 12px;
+}
+
+/*Estilos footer*/
+
+.footer {
+    background-color: var(--negro);
+}
+
+.footer-link {
+    color: var(--grisClaro);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--rojo);
+}
+
+.social-icon {
+    color: var(--blanco);
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.social-icon:hover {
+    color: var(--rojo);
+}
