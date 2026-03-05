@@ -11,6 +11,8 @@
     --negroClaro: #282828;
     --rojo: #BD2F15;
     --negroTransparente: #00000080;
+    --rojoTransparente: #bd2f15b3;
+    --rosa: #bd2f151a;
 }
 
 body {
@@ -53,5 +55,29 @@ body {
     background-color: var(--negroTransparente);
     padding: 20px;
     border-radius: 8px;
+}
+
+.card-option {
+    background: var(--negroTransparente);
+    border-radius: 14px;
+    width: 160px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+}
+
+.card-number {
+    background: var(--rojoTransparente);
+    color: var(--blanco);
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
