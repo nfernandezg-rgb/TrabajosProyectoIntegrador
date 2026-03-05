@@ -10,6 +10,7 @@
     --negro: #121212;
     --negroClaro: #282828;
     --rojo: #BD2F15;
+    --negroTransparente: #00000080;
 }
 
 body {
@@ -42,9 +43,15 @@ body {
     font-weight: 700;
 }
 
-.svg-usuario{
-    width: 200px;
-    fill: var(--grisOscuro);
-    opacity: 0.15;
-    
+
+.bienvenida img {
+    height: 400px;
+    object-fit: cover;
 }
+
+.carousel-caption {
+    background-color: var(--negroTransparente);
+    padding: 20px;
+    border-radius: 8px;
+}
+
