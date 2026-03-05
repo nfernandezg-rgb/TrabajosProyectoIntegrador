@@ -30,3 +30,4 @@ El objetivo principal es demostrar el dominio del desarrollo frontend utilizando
 - CSS3
 - Bootstrap 5.3
 - Bootstrap Icons
+
