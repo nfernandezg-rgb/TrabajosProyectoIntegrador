@@ -20,6 +20,8 @@ body {
     background-color: var(--gris);
 }
 
+
+
 /*Estilos Navbar*/
 .topbar {
     background-color: var(--rojo);
@@ -46,6 +48,8 @@ body {
     font-weight: 700;
 }
 
+
+
 /*Estilos Carroucel*/
 
 .bienvenida img {
@@ -58,6 +62,8 @@ body {
     padding: 20px;
     border-radius: 8px;
 }
+
+
 
 /*Estilos tarjetas*/
 
@@ -79,18 +85,21 @@ body {
     width: 27px;
     height: 27px;
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
+
 /*Estilos formulario*/
 
-.form-box {
+.formBox {
     background-color: var(--rojoTenue);
     border-radius: 12px;
 }
+
+
 
 /*Estilos footer*/
 
@@ -109,8 +118,9 @@ body {
 
 .social-icon {
     color: var(--blanco);
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-right: 10px;
+    text-decoration: none;
 }
 
 .social-icon:hover {
