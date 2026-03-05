@@ -41,3 +41,10 @@ body {
     color: var(--negro);
     font-weight: 700;
 }
+
+.svg-usuario{
+    width: 200px;
+    fill: var(--grisOscuro);
+    opacity: 0.15;
+    
+}
