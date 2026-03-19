@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es"> <!--se cambio de en a es ya que la pagina es en español-->
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <div class="container mt-4">
+    <main class="container mt-4"> <!--Se cambio esta etiqueta de div a main para que el codigo tenga mejor semantica-->
         <div class="row mb-4">
             <div class="col-md-12">
                 <!--<div class="h1"><i class="fas fa-gift me-2"></i>Productos disponibles para canjear</div>-->
-                <!--Esta linea se modifico-->
+                <!--Esta linea se modifico ya que antes era un div tratado como clase h1, y se cambio para que fuera un h1 que permite una correcta jerarquia y se agrega aria-hidden -->
                 <h1><i class="fas fa-gift me-2" aria-hidden="true"></i>Productos disponibles para canjear</h1>
                 <p class="lead">Canjea tus puntos por productos en comercios afiliados</p>
             </div>
@@ -135,10 +135,11 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+    </main>
 
     <!--<a href="#" aria-hidden="true" tabindex="1">Enlace oculto</a>
-    <a href="#" tabindex="-1">Términos y condiciones</a>-->
+    <a href="#" tabindex="-1">Términos y condiciones</a>--> <!--Se intercambia esto por la linea de abajo-->
 
     <a href="#">Términos y condiciones</a>
 
@@ -147,9 +148,3 @@
 
 </html>
 
-<div class="producto-header">
-    <h5>Nombre del producto</h5>
-    <span class="estado-producto estado-disponible">
-        Disponible
-    </span>
-</div>
