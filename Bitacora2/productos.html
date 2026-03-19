@@ -15,7 +15,8 @@
     <div class="container mt-4">
         <div class="row mb-4">
             <div class="col-md-12">
-                <!--<div class="h1"><i class="fas fa-gift me-2"></i>Productos disponibles para canjear</div>--> <!--Esta linea se modifico-->
+                <!--<div class="h1"><i class="fas fa-gift me-2"></i>Productos disponibles para canjear</div>-->
+                <!--Esta linea se modifico-->
                 <h1><i class="fas fa-gift me-2" aria-hidden="true"></i>Productos disponibles para canjear</h1>
                 <p class="lead">Canjea tus puntos por productos en comercios afiliados</p>
             </div>
@@ -29,13 +30,16 @@
                         <h5 class="mb-0"><i class="fas fa-user me-2"></i>Información del usuario</h5>
                     </div>
                     <div class="card-body">
-                        <img src="https://via.placeholder.com/50" class="rounded-circle me-2" style="float:left;">
+                        <!-- <img src="https://via.placeholder.com/50" class="rounded-circle me-2" style="float:left;"> -->
+                        <!--Se modifico esta linea para agregar el ALT-->
+                        <img src="https://via.placeholder.com/50" class="rounded-circle me-2" style="float:left;"
+                            alt="Foto de perfil del usuario">
                         <p><strong>Nombre:</strong> <span id="nombreUsuario">Cargando...</span></p>
                         <p><strong>Correo:</strong> <span id="correoUsuario">Cargando...</span></p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-6">
                 <div class="card puntos-card">
                     <div class="card-header bg-success text-green">
@@ -45,7 +49,8 @@
                         <div class="row text-center">
                             <div class="col-md-4">
                                 <div class="puntos-tipo">
-                                    <div class="puntos-valor" id="puntosDisponibles">0</div>
+                                    <div class="puntos-valor estado-producto estado-disponible" id="puntosDisponibles">0
+                                    </div>
                                     <div class="puntos-label">Disponibles</div>
                                 </div>
                             </div>
@@ -110,11 +115,15 @@
             <div class="col-md-12">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h3>Productos disponibles</h3>
-                    <div class="btn btn-primary" role="button" tabindex="2" id="filtroBtn" onclick="alert('Filtro no implementado')">
-                        <i class="fas fa-filter"></i> Filtrar
-                    </div>
+                    <!--  <div class="btn btn-primary" role="button" tabindex="2" id="filtroBtn"
+                        onclick="alert('Filtro no implementado')">
+                        <i class="fas fa-filter"></i> Filtrar.      
+                    </div> --> <!--Esta linea se cambia por la de abajo para usar el elemento button en vez de div-->
+                    <button class="btn btn-primary" id="filtroBtn">
+                        <i class="fas fa-filter" aria-hidden="true"></i> Filtrar
+                    </button>
                 </div>
-                
+
                 <div id="productos-container" class="row">
                     <!-- Los productos se cargarán aquí dinámicamente -->
                     <div class="col-12 text-center py-5">
@@ -128,10 +137,19 @@
         </div>
     </div>
 
-    <a href="#" aria-hidden="true" tabindex="1">Enlace oculto</a>
+    <!--<a href="#" aria-hidden="true" tabindex="1">Enlace oculto</a>
+    <a href="#" tabindex="-1">Términos y condiciones</a>-->
 
-    <a href="#" tabindex="-1">Términos y condiciones</a>
+    <a href="#">Términos y condiciones</a>
 
 
 </body>
+
 </html>
+
+<div class="producto-header">
+    <h5>Nombre del producto</h5>
+    <span class="estado-producto estado-disponible">
+        Disponible
+    </span>
+</div>
